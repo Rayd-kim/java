@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import org.youskim.shop.shopping.entity.Users;
 
 @Repository
-public interface UserRepository extends JpaRepository<Users, Long> {
+public interface UserRepository extends JpaRepository<Users, String> {
 }

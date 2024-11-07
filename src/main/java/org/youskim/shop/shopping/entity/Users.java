@@ -3,21 +3,19 @@ package org.youskim.shop.shopping.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
-//@Builder
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@Data
-public class Users {
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+public class Users extends BaseTimeEntity {
 
     @Id
     @Column(length = 20)
-    @Size(min = 6, max = 20)
+    @Size(min = 1, max = 20)
     private String userId;
 
     @Column(nullable = false)

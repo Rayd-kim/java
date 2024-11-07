@@ -1,9 +1,12 @@
 package org.youskim.shop.shopping.entity;
 
 import jakarta.persistence.*;
+import org.springframework.data.annotation.CreatedDate;
+
+import java.time.LocalDate;
 
 @Entity
-public class Products {
+public class Products extends BaseTimeEntity {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)

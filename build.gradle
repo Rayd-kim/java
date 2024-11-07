@@ -38,6 +38,10 @@ dependencies {
     implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
     implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
 
+    implementation 'org.modelmapper:modelmapper:3.2.1'
+
+    // security
+    implementation 'org.springframework.boot:spring-boot-starter-security:3.3.4'
 }
 
 tasks.named('test') {
